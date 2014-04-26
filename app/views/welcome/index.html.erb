@@ -1,0 +1,15 @@
+<h1>Votre petit déjeuner réiventé</h1>
+<h2>Mixez vos mueslis préferés et recevez-les directement chez vous.</h2>
+
+
+
+<%= form_for :post do |f| %>
+  <div class="form-group">
+    <%= f.email_field :post, class: "form-control", placeholder: "Envoyez moi un e-mail quand c'est prêt..." %>
+  	<%= f.submit "Envoyer", class: 'btn btn-danger' %>
+  </div>
+
+<% end %>
+
+
+<h3> <strong> Comment ça marche ?</strong></h3>
