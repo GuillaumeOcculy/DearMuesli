@@ -5,8 +5,9 @@
 
 $body-bg : 									#ecf0f1;
 $font-family-sans-serif: 					'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
-$font-size-h1: 								60px;
-$font-size-h2:								20px;
+$font-size-h1: 								70px;
+$font-size-h2:								30px;
+$font-size-h3:								40px;
 
 @import "bootstrap";
 
@@ -26,5 +27,13 @@ $font-size-h2:								20px;
 
 	h3{
 		font-weight: bold;
+	}
+
+	p{
+		font-size: 20px;
+	}
+
+	img{
+		border-radius: 25px;
 	}
 }
