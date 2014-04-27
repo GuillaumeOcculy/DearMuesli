@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import url(http://fonts.googleapis.com/css?family=Abel);
 
-$body-bg : 									#ecf0f1;
 $font-family-sans-serif: 					'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
 $font-size-h1: 								70px;
 $font-size-h2:								30px;
@@ -17,12 +16,16 @@ body{
 	text-align: center;
 }
 header{
-	height: 500px;
+	height: 535px;
 	width: 100%;
 	background-image: image-url("dearmuesli.jpg");
 	background-size: cover;
 	.pre-header{
 		margin-top: 30px;
+
+		img.logo{
+			float: left;
+		}
 
 		button.btn{
 			float: right;
@@ -58,26 +61,47 @@ header{
 	}
 
 }
-
+	img.ble{
+			width: 100%;
+			margin-top: -35px;
+		}
 
 section{
 	img{
 		border-radius: 5%;
+	}
+
+	img.chiffres{
+		margin-left: -185px;
 	}
 }
 
 footer{
 	
 	.pre-footer{
-		vertical-align: middle;
 		background-image: image-url("joinus.jpg");
 		background-size: cover;
 		height: 300px;
 
+		.joinus{
+			margin-top: 129px;
+		}
 		p{
+			float: left;
+			margin-left: 40px;
 			color: white;
 			font-weight: bold;
+			font-size: 30px;
 		}
 		
 	}
+
+	.navbar-bottom{
+		margin-top: 30px;
+		height: 100px;
+	}
+
+
+
+
 }
