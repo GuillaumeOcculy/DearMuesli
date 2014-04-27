@@ -1,32 +1,20 @@
-<h1>Votre petit déjeuner réiventé</h1>
-<h2>Mixez vos mueslis préferés et recevez-les directement chez vous.</h2>
+<section>
+	<h3> <strong> COMMENT ÇA MARCHE ?</strong></h3>
 
+	<div class="row">
+	  <div class="col-xs-6 col-md-4">
+	  	<%= image_tag "Muesli.jpg", :size => "300x300" %>
+	  	<p>JE SALIVE</p>
+	  </div>
+	  <div class="col-xs-6 col-md-4">
+	  	<%= image_tag "Muesli2.jpg", :size => "300x300" %>
+	  	<p>JE SUCCOMBE</p>
+	  </div>
+	  <div class="col-xs-6 col-md-4">
+	  	<%= image_tag "Muesli3.jpg", :size => "300x300" %>
+	  	<p>JE SAVOURE</p>
+	  </div>
+	</div>
 
-
-<%= form_for :post do |f| %>
-  <div class="form-group">
-    <%= f.email_field :post, class: "form-control", placeholder: "Envoyez moi un e-mail quand c'est prêt..." %>
-  	<%= f.submit "Envoyer", class: 'btn btn-danger' %>
-  </div>
-
-<% end %>
-
-
-<h3> <strong> COMMENT ÇA MARCHE ?</strong></h3>
-
-
-<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-<div class="row">
-  <div class="col-xs-6 col-md-4">
-  	<%= image_tag "Muesli.jpg", :size => "200x300" %>
-  	<p>Je salive</p>
-  </div>
-  <div class="col-xs-6 col-md-4">
-  	<%= image_tag "Muesli2.jpg", :size => "200x300" %>
-  	<p>Je succombe</p>
-  </div>
-  <div class="col-xs-6 col-md-4">
-  	<%= image_tag "Muesli3.jpg", :size => "200x300" %>
-  	<p>Je savoure</p>
-  </div>
-</div>
+	
+</section>
