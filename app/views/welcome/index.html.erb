@@ -1,3 +1,31 @@
+<header class="header">
+	<div class="container">
+		<div class="pre-header">
+			<a class="btn" href="mailto:dearmuesli@gmail.com?Subject=Hello" target="_top"> CONTACTEZ NOUS </a>
+			<%= image_tag "logo.png", :size => "120x120", :class => "logo" %>
+		</div>
+		<section>
+			<h1>Votre petit déjeuner réiventé</h1>
+			<h2>Mixez vos mueslis préferés et recevez-les directement chez vous.</h2>
+
+			<%= form_for :user do |f| %>
+			  <div class="form-group">
+			    <%= f.email_field :email, class: "form-control", placeholder: "Envoyez moi un e-mail quand c'est prêt..." %>
+			  	<%= f.submit "ENVOYER", class: 'btn btn-danger' %>
+
+			  	<% flash.each do |key, value| %>
+				  <div class="alert alert-<%= key %>">
+				  	<%= value %>
+				  </div>
+				<% end %>
+			  </div>
+			<% end %>
+		</section> 	
+	</div>
+	
+</header>
+<%= image_tag "ble.png", :class => "ble" %>
+
 <section>
 	
 	<h3> <strong> COMMENT ÇA MARCHE ?</strong></h3>
@@ -20,3 +48,31 @@
 	<%= image_tag "chiffres.png", :size => "1500x320", :class => "chiffres" %>
 	
 </section>
+
+
+<footer class="footer">
+	<div class="pre-footer">
+		<div class="container">
+			<div class="joinus">
+				<p>REJOIGNEZ NOUS SUR :</p>
+				<%= link_to(image_tag("/assets/instagram.png", :alt => "logo", :title => "instagram", :size => '50x50', :class => "instagram"), "http://instagram.com/dearmuesli", :target => '_blank') %>
+
+				<%= link_to(image_tag("/assets/facebook.png", :alt => "logo", :title => "facebook", :size => '50x50', :class => "facebook"), "https://www.facebook.com/dearmuesli", :target => '_blank') %>
+
+				<%= link_to(image_tag("/assets/twitter.png", :alt => "logo", :title => "twitter", :size => '50x50', :class => "twitter"), "https://twitter.com/dearmuesli", :target => '_blank') %>
+
+			</div>
+		</div>
+	</div>
+	
+	<%= image_tag "ble.png", :class => "ble" %>
+
+	<nav class="navbar  navbar-bottom">
+		<p><strong>Home</strong> . <strong>Comment ça marche</strong> . <strong> Dear Muesli en 3 chiffres</strong></p>
+	  <small>
+	  Copyright &copy; Dear Muesli 2014. All Rights Reserved <br>
+	  by  <a href="http://occuly.me" target="_blank">Guillaume Occuly</a>
+	  </small>	
+	</nav>
+
+</footer>
