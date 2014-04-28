@@ -1,17 +1,23 @@
 <header class="header">
 	<div class="container">
 		<div class="pre-header">
-			<button class="btn"> CONTACTEZ NOUS</button>
+			<a class="btn" href="mailto:dearmuesli@gmail.com?Subject=Hello" target="_top"> CONTACTEZ NOUS </a>
 			<%= image_tag "logo.png", :size => "120x120", :class => "logo" %>
 		</div>
 		<section>
 			<h1>Votre petit déjeuner réiventé</h1>
 			<h2>Mixez vos mueslis préferés et recevez-les directement chez vous.</h2>
 
-			<%= form_for :post do |f| %>
+			<%= form_for :user do |f| %>
 			  <div class="form-group">
-			    <%= f.email_field :post, class: "form-control", placeholder: "Envoyez moi un e-mail quand c'est prêt..." %>
-			  	<%= f.submit "Envoyer", class: 'btn btn-danger' %>
+			    <%= f.email_field :email, class: "form-control", placeholder: "Envoyez moi un e-mail quand c'est prêt..." %>
+			  	<%= f.submit "ENVOYER", class: 'btn btn-danger' %>
+
+			  	<% flash.each do |key, value| %>
+				  <div class="alert alert-<%= key %>">
+				  	<%= value %>
+				  </div>
+				<% end %>
 			  </div>
 			<% end %>
 		</section> 	
