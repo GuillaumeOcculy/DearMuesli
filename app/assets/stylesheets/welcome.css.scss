@@ -18,7 +18,7 @@ body{
 header{
 	height: 535px;
 	width: 100%;
-	background-image: image-url("dearmuesli.jpg");
+	background: url("dearmuesli.jpg");
 	background-size: cover;
 	.pre-header{
 		margin-top: 30px;
@@ -83,7 +83,7 @@ section{
 footer{
 	
 	.pre-footer{
-		background-image: image-url("joinus.jpg");
+		background: url("joinus.jpg");
 		background-size: cover;
 		height: 300px;
 
