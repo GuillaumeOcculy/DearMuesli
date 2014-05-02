@@ -71,13 +71,14 @@ header{
 		}
 
 section{
+	.row{
+		margin-right: 0px;
+	}
 	img{
 		border-radius: 5%;
 	}
 
-	img.chiffres{
-		margin-left: -50px;
-	}
+	
 }
 
 footer{
