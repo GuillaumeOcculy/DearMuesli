@@ -31,6 +31,7 @@ header{
 	height: 535px;
 	background-image:url('<%= asset_path("bg-header.jpg") %> ');
 	background-size: cover;
+	border-bottom: 2px solid #ca2927;
 	.container{
 		padding: 0px;
 	}
@@ -70,17 +71,25 @@ header{
 		.form-group{
 			margin-top: 50px;
 			display: inline-block;
+			border: 2px solid white;
+			border-radius: 4px;
+
+			background: white;
 		}
 
 		.form-control{
-			width: 310px;
+			width: 400px;
+			height: 40px;
 			display: inline-block;
 			font-size: 15px;
+
+			border: white;
 		}
 
 		.btn-danger{
-			margin-left: -70px;
-			border: 1px solid white;
+			height: 40px;
+			
+			margin-left: -68px;
 		}
 
 		.btn-danger:hover{
@@ -97,11 +106,12 @@ header{
 
 }
 	img.ble{
-			width: 100%;
-			margin-top: -35px;
+			width: 1000px;
+			margin-top: -25px;
 		}
 
 section{
+	
 	.row{
 		margin-right: 0px;
 	}
@@ -129,6 +139,8 @@ footer{
 		background-image:url('<%= asset_path("bg-footer.jpg") %> ');
 		background-size: cover;
 		height: 300px;
+
+		border-bottom: 2px solid #ca2927;
 
 		.joinus{
 			margin-top: 130px;
