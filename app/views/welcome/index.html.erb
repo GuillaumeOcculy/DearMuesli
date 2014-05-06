@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="home">
 	<div class="container">
 		<div class="pre-header">
 			<a class="btn" href="mailto:dearmuesli@gmail.com?Subject=Hello" target="_top"> CONTACTEZ-NOUS </a>
@@ -26,26 +26,26 @@
 </header>
 
 
-<section>
+<section id="howitworks">
 	<%= image_tag "ble.png", :class => "ble" %>
 	<h3> <strong> COMMENT ÇA MARCHE ?</strong></h3>
 
 	<div class="row">
-	  <div class="col-xs-6 col-md-4">
+	  <div class="picture">
 	  	<%= image_tag "salive.jpg", :size => "300x300" %>
 	  	<p>JE SALIVE</p>
 	  </div>
-	  <div class="col-xs-6 col-md-4">
+	  <div class="picture">
 	  	<%= image_tag "succombe.jpg", :size => "300x300" %>
 	  	<p>JE SUCCOMBE</p>
 	  </div>
-	  <div class="col-xs-6 col-md-4">
+	  <div class="picture">
 	  	<%= image_tag "savoure.jpg", :size => "300x300" %>
 	  	<p>JE SAVOURE</p>
 	  </div>
 	</div>
 
-	<%= image_tag "chiffres.png",  :class => "chiffres" %>
+	<%= image_tag "chiffres.png",  :class => "chiffres", :id => 'numbers' %>
 	
 </section>
 
@@ -68,7 +68,7 @@
 	<%= image_tag "ble.png", :class => "ble" %>
 
 	<nav class="navbar  navbar-bottom">
-		<p><strong>Home</strong> . <strong>Comment ça marche</strong> . <strong> Dear Muesli en 3 chiffres</strong></p>
+		<p> <a href="#home"> <strong>Home</strong> </a>  . <a href="#howitworks"> <strong>Comment ça marche</strong>  </a>  . <a href="#numbers"> <strong> Dear Muesli en 3 chiffres</strong> </a> </p>
 	  <small>
 	  Copyright &copy; Dear Muesli 2014. All Rights Reserved <br>
 	  by  <a href="http://occuly.me" target="_blank">Guillaume Occuly</a>
