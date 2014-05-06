@@ -1,11 +1,25 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import url(http://fonts.googleapis.com/css?family=Abel);
+/*@import url(http://fonts.googleapis.com/css?family=Abel);*/
+@font-face {
+  font-family: 'miso';
+  src:url('<%= asset_path("miso.otf") %> ');
+  font-weight: normal;
+  font-style: normal;
+}
 
-$font-family-sans-serif: 					'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+@font-face {
+  font-family: 'miso-bold';
+  src:url('<%= asset_path("miso-bold.otf") %> ');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$font-family-sans-serif: 					'miso', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
 $font-size-h1: 								70px;
-$font-size-h2:								30px;
+$font-size-h2:								23px;
 $font-size-h3:								40px;
 
 @import "bootstrap";
@@ -28,6 +42,7 @@ header{
 		}
 
 		a.btn{
+			width: 150px;
 			float: right;
 			background-color: transparent;
 			color : white;
@@ -45,8 +60,12 @@ header{
 		margin-top: 140px;
 		h1,h2{
 		color: white;
+		display: inline-block;
 		}
-	
+		
+		h2{
+			margin-left: 120px;
+		}
 		.form-group{
 			margin-top: 50px;
 			display: inline-block;
@@ -55,11 +74,11 @@ header{
 		.form-control{
 			width: 310px;
 			display: inline-block;
+			font-size: 15px;
 		}
 
 		.btn-danger{
-			margin-top: -3px;
-			margin-left: -77px;
+			margin-left: -70px;
 			border: 1px solid white;
 		}
 
@@ -93,6 +112,12 @@ section{
 			width: 100%;
 		}
 
+	p{
+		margin-top: 10px;
+		font-family: "miso-bold";
+		font-size: 25px;
+	}
+
 	
 }
 
@@ -105,7 +130,8 @@ footer{
 		height: 300px;
 
 		.joinus{
-			margin-top: 129px;
+			margin-top: 130px;
+			margin-left: 30px;
 		}
 		p{
 			float: left;
@@ -120,6 +146,20 @@ footer{
 	.navbar-bottom{
 		margin-top: 30px;
 		height: 100px;
+
+		p{
+			font-family: "miso-bold";
+			font-size: 25px;
+		}
+
+		small{
+			font-size: 20px;
+			a{
+				text-decoration: none
+			}
+		}
 	}
+
+
 
 }
