@@ -12,7 +12,21 @@
 
  */
 
-@import url(http://fonts.googleapis.com/css?family=Abel);
+/*@import url(http://fonts.googleapis.com/css?family=Abel);*/
+@font-face {
+  font-family: 'miso';
+  src: url("/assets/miso.otf ");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'miso-bold';
+  src: url("/assets/miso-bold.otf ");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /* line 9, /Users/Guillaume/.rvm/gems/ruby-2.1.1/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_normalize.scss */
 html {
@@ -1421,7 +1435,7 @@ html {
 
 /* line 27, /Users/Guillaume/.rvm/gems/ruby-2.1.1/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "miso", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
@@ -1602,7 +1616,7 @@ h1, .h1 {
 
 /* line 48, /Users/Guillaume/.rvm/gems/ruby-2.1.1/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_type.scss */
 h2, .h2 {
-  font-size: 30px;
+  font-size: 23px;
 }
 
 /* line 49, /Users/Guillaume/.rvm/gems/ruby-2.1.1/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_type.scss */
@@ -7906,90 +7920,134 @@ button.close {
     display: none !important;
   }
 }
-/* line 13, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 28, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 body {
-  height: 100%;
-  width: 100%;
   text-align: center;
 }
 
-/* line 18, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 31, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 header {
   height: 535px;
-  width: 100%;
-  background-image: url(/assets/dearmuesli.jpg);
+  background-image: url("/assets/bg-header.jpg ");
   background-size: cover;
+  border-bottom: 2px solid #ca2927;
 }
-/* line 23, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 36, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
+header .container {
+  padding: 0px;
+}
+/* line 39, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 header .pre-header {
   margin-top: 30px;
 }
-/* line 26, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 42, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 header .pre-header img.logo {
   float: left;
+  margin-top: -50px;
 }
-/* line 30, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 47, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 header .pre-header a.btn {
+  width: 150px;
   float: right;
   background-color: transparent;
   color: white;
   border: 1px solid white;
 }
-/* line 39, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 55, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
+header .pre-header a.btn:hover {
+  background-color: white;
+  color: black;
+}
+/* line 62, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 header section {
   margin-top: 140px;
 }
-/* line 41, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 64, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 header section h1, header section h2 {
   color: white;
+  display: inline-block;
 }
-/* line 45, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 69, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
+header section h1 {
+  margin-left: -180px;
+}
+/* line 73, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 header section .form-group {
   margin-top: 50px;
   display: inline-block;
+  border: 2px solid white;
+  border-radius: 4px;
+  background: white;
 }
-/* line 50, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 82, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 header section .form-control {
-  width: 350px;
+  width: 400px;
+  height: 40px;
   display: inline-block;
+  font-size: 20px;
+  border: white;
 }
-/* line 55, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 91, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 header section .btn-danger {
-  margin-top: -3px;
-  margin-left: -70px;
-  border: 1px solid white;
+  height: 40px;
+  margin-left: -68px;
 }
-/* line 61, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 97, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
+header section .btn-danger:hover {
+  border-color: white;
+}
+/* line 101, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 header section .alert {
   margin-top: 10px;
 }
 
-/* line 68, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 110, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 img.ble {
-  width: 100%;
-  margin-top: -35px;
+  /*width: 1000px;*/
+  margin-top: -45px;
 }
 
-/* line 74, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 117, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
+section .row {
+  margin-right: 0px;
+}
+/* line 120, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
+section .row .picture {
+  display: inline-block;
+  padding: 0 15px;
+}
+/* line 125, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 section img {
   border-radius: 5%;
 }
-/* line 78, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 129, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 section img.chiffres {
-  margin-left: -185px;
+  width: 100%;
+}
+/* line 133, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
+section p {
+  margin-top: 10px;
+  font-family: "miso-bold";
+  font-size: 25px;
 }
 
-/* line 85, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 144, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 footer .pre-footer {
-  background-image: url(/assets/joinus.jpg);
+  background-image: url("/assets/bg-footer.jpg ");
   background-size: cover;
   height: 300px;
+  border-bottom: 2px solid #ca2927;
 }
-/* line 90, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 152, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 footer .pre-footer .joinus {
-  margin-top: 129px;
+  margin-top: 130px;
+  margin-left: 30px;
 }
-/* line 93, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 156, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
+footer .pre-footer .joinus img {
+  margin-top: -20px;
+}
+/* line 160, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 footer .pre-footer p {
   float: left;
   margin-left: 40px;
@@ -7997,8 +8055,27 @@ footer .pre-footer p {
   font-weight: bold;
   font-size: 30px;
 }
-/* line 103, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss */
+/* line 170, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
 footer .navbar-bottom {
   margin-top: 30px;
   height: 100px;
+}
+/* line 174, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
+footer .navbar-bottom p {
+  font-family: "miso-bold";
+  font-size: 25px;
+}
+/* line 178, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
+footer .navbar-bottom p a {
+  text-decoration: none;
+  color: black;
+}
+/* line 185, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
+footer .navbar-bottom small {
+  font-size: 20px;
+}
+/* line 187, /Users/Guillaume/rails_projects/dearmuesli/app/assets/stylesheets/welcome.css.scss.erb */
+footer .navbar-bottom small a {
+  text-decoration: none;
+  color: #428bca;
 }
