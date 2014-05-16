@@ -10,7 +10,7 @@
 
 			<%= form_for :user do |f| %>
 			  <div class="form-group input-append">
-			    <%= f.email_field :email, class: "form-control", placeholder: "Envoyez moi un e-mail quand c'est prêt..." %>
+			    <%= f.email_field :email, class: "form-control", placeholder: "Envoyez moi un e-mail quand c'est prêt...", :required => true %>
 			  	<%= f.submit "ENVOYER", class: 'btn btn-danger' %>
 
 			  	<% flash.each do |key, value| %>
