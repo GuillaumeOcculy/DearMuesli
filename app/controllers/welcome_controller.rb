@@ -5,13 +5,13 @@ class WelcomeController < ApplicationController
 
   def create
   	@user = User.new(user_params)
-  	@user.save
-  	flash[:success] = "Email enregistré !"
-  	redirect_to root_path
+  	if @user.save
+  	 flash[:success] = "Email enregistré !"
+  	 redirect_to root_path
+    else
+      redirect_to root_path
+    end
   end
-
-
-
 
   private
   def user_params
