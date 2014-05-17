@@ -5,12 +5,12 @@
 			<%= image_tag "logo.png", :size => "210x210", :class => "logo" %>
 		</div>
 		<section>
-			<h1>Votre petit déjeuner réiventé</h1>
-			<h2>MIXEZ VOS MUESLIS PRÉFERÉS ET RECEVEZ-LES DIRECTEMENT CHEZ VOUS.</h2>
+			<h1>Votre petit déjeuner réinventé</h1>
+			<h2>MIXEZ VOS MUESLIS PRÉFÉRÉS ET RECEVEZ-LES DIRECTEMENT CHEZ VOUS.</h2>
 
 			<%= form_for :user do |f| %>
 			  <div class="form-group input-append">
-			    <%= f.email_field :email, class: "form-control", placeholder: "Envoyez moi un e-mail quand c'est prêt...", :required => true %>
+			    <%= f.email_field :email, class: "form-control", placeholder: "Envoyez-moi un e-mail quand c'est prêt...", :required => true %>
 			  	<%= f.submit "ENVOYER", class: 'btn btn-danger' %>
 
 			  	<% flash.each do |key, value| %>
