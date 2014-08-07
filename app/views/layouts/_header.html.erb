@@ -10,7 +10,7 @@
 
 			<%= form_for :user do |f| %>
 			  <div class="form-group">
-			    <%= f.email_field :email, class: "form-control", placeholder: "Envoyez moi un e-mail quand c'est prêt..." %>
+			    <%= f.email_field :email, class: "form-control", placeholder: "Me prévenir quand le site est prêt" %>
 			  	<%= f.submit "ENVOYER", class: 'btn btn-danger' %>
 
 			  	<% flash.each do |key, value| %>
@@ -20,8 +20,8 @@
 				<% end %>
 			  </div>
 			<% end %>
-		</section> 	
+		</section>
 	</div>
-	
+
 </header>
 <%= image_tag "ble.png", :class => "ble" %>

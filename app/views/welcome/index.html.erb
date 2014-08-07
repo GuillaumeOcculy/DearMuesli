@@ -10,7 +10,7 @@
 
 			<%= form_for :user do |f| %>
 			  <div class="form-group input-append">
-			    <%= f.email_field :email, class: "form-control", placeholder: "Envoyez-moi un e-mail quand c'est prêt...", :required => true %>
+			    <%= f.email_field :email, class: "form-control", placeholder: "Me prévenir quand le site est prêt", :required => true %>
 			  	<%= f.submit "ENVOYER", class: 'btn btn-danger' %>
 
 			  	<% flash.each do |key, value| %>
@@ -20,9 +20,9 @@
 				<% end %>
 			  </div>
 			<% end %>
-		</section> 	
+		</section>
 	</div>
-	
+
 </header>
 
 
@@ -46,7 +46,7 @@
 	</div>
 
 	<%= image_tag "chiffres.png",  :class => "chiffres", :id => 'numbers' %>
-	
+
 </section>
 
 
@@ -64,14 +64,14 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<%= image_tag "ble.png", :size => '90x90', :class => "ble" %>
 
 	<nav class="navbar  navbar-bottom">
 		<p> <a href="#home"> <strong>Home</strong> </a>  . <a href="#howitworks"> <strong>Comment ça marche</strong>  </a>  . <a href="#numbers"> <strong> Dear Muesli en 3 chiffres</strong> </a> </p>
 	  <small>
 	  Copyright &copy; Dear Muesli 2014. All Rights Reserved <br>
-	  </small>	
+	  </small>
 	</nav>
 
 </footer>
