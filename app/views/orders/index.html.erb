@@ -1,0 +1,201 @@
+<header class="header small-header" id="home">
+	<div class="container">
+		<div class="pre-header">
+			<a class="btn" href="mailto:dearmuesli@gmail.com?Subject=Hello" target="_top"> CONTACTEZ-NOUS </a>
+			<a href="<%= root_path %>"><%= image_tag "logo.png", :size => "210x210", :class => "logo" %></a>
+		</div>
+		<section>
+			<h1>Découvrez nos Recettes</h1>
+		</section>
+	</div>
+</header>
+
+<section id="orders">
+	<%= image_tag "ble.png", :size => '90x90', :class => "ble" %>
+	<div class="container">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4">
+					<%= image_tag "IMG_1087++.jpg", :size => "280x280" %>
+				</div>
+				<div class="col-md-8">
+					<div class="page-header">
+						<h3 class="text-left">PACK AVEC LES 4 MIXES</h3>
+					</div>
+					<p class="text-left">
+						Goûtez à nos délicieuses recettes ! Le Cool Kid, le Forest, le Booster et le Detox vous feront voyager !
+					</p>
+					<div class="text-center">
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="H2VBHLQBJPT4A">
+						<table class="table-paypal">
+						<tr><td><input type="hidden" name="on0" value="Taille">Taille</td></tr><tr><td><select name="os0">
+							<option value="4 X 200g">4 X 200g €15,00 EUR</option>
+							<option value="4 X 575g">4 X 575g €25,00 EUR</option>
+						</select> </td></tr>
+						</table>
+						<input type="hidden" name="currency_code" value="EUR">
+						<input class="input-paypal" type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
+						<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<%= image_tag "COOL_KID.png", :size => "280x280" %>
+				</div>
+				<div class="col-md-8">
+					<div class="page-header">
+						<h3 class="text-left">Pack COOL KID</h3>
+					</div>
+					<p class="text-left">
+						Le Cool Kid avec un mélange parfait de fraises et de bananes, vous promet une explosion de saveurs.
+					</p>
+					<p class="text-left">
+						<ins>Ingrédients</ins> : Crunchy Granola, Fraises, Bananes, Graines de pavot, Graines de tournesol, Sésame blond complet et de l’Amour
+					</p>
+					<div class="text-center">
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="CMMRH8CRLAN2S">
+						<table class="table-paypal">
+						<tr><td><input type="hidden" name="on0" value="Taille">Taille</td></tr><tr><td><select name="os0">
+							<option value="4 X 200g">4 X 200g €15,00 EUR</option>
+							<option value="4 X 575g">4 X 575g €25,00 EUR</option>
+						</select> </td></tr>
+						</table>
+						<input type="hidden" name="currency_code" value="EUR">
+						<input class="input-paypal" type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
+						<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<%= image_tag "BOOSTER.png", :size => "280x280" %>
+				</div>
+				<div class="col-md-8">
+					<div class="page-header">
+						<h3 class="text-left">Pack BOOSTER</h3>
+					</div>
+					<p class="text-left">
+						Le booster vous réveille et vous fait voyager en orient grâce à ses morceaux de dattes.
+					</p>
+					<p class="text-left">
+						<ins>Ingrédients</ins> : Crunchy Granola, Dattes, Pommes, Cerises, Graines de courges, Graines de lin doré et de l’énergie
+					</p>
+					<div class="text-center">
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="METN6VDZLLAUU">
+						<table class="table-paypal">
+						<tr><td><input type="hidden" name="on0" value="Taille">Taille</td></tr><tr><td><select name="os0">
+							<option value="4 X 200g">4 X 200g €15,00 EUR</option>
+							<option value="4 X 575g">4 X 575g €25,00 EUR</option>
+						</select> </td></tr>
+						</table>
+						<input type="hidden" name="currency_code" value="EUR">
+						<input class="input-paypal" type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
+						<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<%= image_tag "FOREST.png", :size => "280x280" %>
+				</div>
+				<div class="col-md-8">
+					<div class="page-header">
+						<h3 class="text-left">Pack FOREST</h3>
+					</div>
+					<p class="text-left">
+						De gros morceaux de figues et de noix croquantes pour un moment de plaisir.
+					</p>
+					<p class="text-left">
+						<ins>Ingrédients</ins> : Crunchy Granola, Pommes, Figues, Cerneaux de noix, Graines de lin brun, Graines de tournesol et de l’aventure
+					</p>
+					<div class="text-center">
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="CZXQPGBZ8JMHL">
+						<table class="table-paypal" >
+						<tr><td><input type="hidden" name="on0" value="Taille">Taille</td></tr><tr><td><select name="os0">
+							<option value="4 X 200g">4 X 200g €15,00 EUR</option>
+							<option value="4 X 575g">4 X 575g €25,00 EUR</option>
+						</select> </td></tr>
+						</table>
+						<input type="hidden" name="currency_code" value="EUR">
+						<input class="input-paypal" type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
+						<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<%= image_tag "DETOX.png", :size => "280x280" %>
+				</div>
+				<div class="col-md-8">
+					<div class="page-header">
+						<h3 class="text-left">Pack DETOX</h3>
+					</div>
+					<p class="text-left">
+						Des fruits rouges à volonté !
+					</p>
+					<p class="text-left">
+						<ins>Ingrédients</ins> : Crunchy Granola, Cranberries, Cerises, Graines de courges, Graines de tournesol, Graines de pavot, Sésame blond complet et de la sérénité
+					</p>
+					<div class="text-center">
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="EZEY3CEUWHHYW">
+						<table class="table-paypal">
+						<tr><td><input type="hidden" name="on0" value="Taille">Taille</td></tr><tr><td><select name="os0">
+							<option value="4 X 200g">4 X 200g €15,00 EUR</option>
+							<option value="4 X 575g">4 X 575g €25,00 EUR</option>
+						</select> </td></tr>
+						</table>
+						<input type="hidden" name="currency_code" value="EUR">
+						<input class="input-paypal" type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
+						<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="pre-footer">
+		<div class="container">
+			<div class="joinus">
+				<p>REJOIGNEZ-NOUS SUR :</p>
+				<%= link_to(image_tag("instagram.png", :alt => "logo", :title => "instagram", :size => '75x75', :class => "instagram"), "http://instagram.com/dearmuesli", :target => '_blank') %>
+
+				<%= link_to(image_tag("facebook.png", :alt => "logo", :title => "facebook", :size => '75x75', :class => "facebook"), "https://www.facebook.com/dearmuesli", :target => '_blank') %>
+
+				<%= link_to(image_tag("twitter.png", :alt => "logo", :title => "twitter", :size => '75x75', :class => "twitter"), "https://twitter.com/dearmuesli", :target => '_blank') %>
+
+			</div>
+		</div>
+	</div>
+
+	<%= image_tag "ble.png", :size => '90x90', :class => "ble" %>
+
+	<nav class="navbar  navbar-bottom">
+		<p> <a href="#home"> <strong>Home</strong> </a>  . <a href="#howitworks"> <strong>Comment ça marche</strong>  </a>  . <a href="#numbers"> <strong> Dear Muesli en 3 chiffres</strong> </a> </p>
+	  <small>
+	  Copyright &copy; Dear Muesli 2014. All Rights Reserved <br>
+	  </small>
+	</nav>
+
+</footer>

@@ -1,15 +1,15 @@
-<header class="header" id="home">
+<header class="header big-header" id="home">
 	<div class="container">
 		<div class="pre-header">
 			<a class="btn" href="mailto:dearmuesli@gmail.com?Subject=Hello" target="_top"> CONTACTEZ-NOUS </a>
-			<%= image_tag "logo.png", :size => "210x210", :class => "logo" %>
+			<a href="<%= root_path %>"><%= image_tag "logo.png", :size => "210x210", :class => "logo" %></a>
 		</div>
 		<section>
 			<h1>Votre petit déjeuner réinventé</h1>
 			<h2>MIXEZ VOS MUESLIS PRÉFÉRÉS ET RECEVEZ-LES DIRECTEMENT CHEZ VOUS.</h2>
 
 			<%= form_for :user do |f| %>
-			  <div class="form-group input-append">
+			  <div class="form-group input-appesnd">
 			    <%= f.email_field :email, class: "form-control", placeholder: "Me prévenir quand le site est prêt", :required => true %>
 			  	<%= f.submit "ENVOYER", class: 'btn btn-danger' %>
 
@@ -44,11 +44,17 @@
 	  	<p>JE SAVOURE</p>
 	  </div>
 	</div>
-
-	<%= image_tag "chiffres.png",  :class => "chiffres", :id => 'numbers' %>
-
 </section>
 
+<section id="order">
+	<div class="pre-order">
+		<h1><a href="<%= orders_path %>"><strong>COMMANDEZ</br>NOS RECETTES</strong></a></h1>
+	</div>
+</section>
+
+<section id="dearnumbers">
+	<%= image_tag "chiffres.png",  :class => "chiffres", :id => 'numbers' %>
+</section>
 
 <footer class="footer">
 	<div class="pre-footer">
