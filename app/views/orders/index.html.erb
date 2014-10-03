@@ -12,12 +12,19 @@
 
 <section id="orders">
 	<%= image_tag "ble.png", :size => '90x90', :class => "ble" %>
+
+
 	<div class="container">
+		<p>Livraison gratuite à partir de 60 euros d'achat</p>
 		<div class="container-fluid">
 			<div class="row">
+
+
 				<div class="col-md-4">
 					<%= image_tag "IMG_1087++.jpg", :size => "280x280" %>
 				</div>
+
+
 				<div class="col-md-8">
 					<div class="page-header">
 						<h3 class="text-left">PACK AVEC LES 4 MIXES</h3>
@@ -75,37 +82,6 @@
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-md-4">
-					<%= image_tag "BOOSTER.png", :size => "280x280" %>
-				</div>
-				<div class="col-md-8">
-					<div class="page-header">
-						<h3 class="text-left">Pack BOOSTER</h3>
-					</div>
-					<p class="text-left">
-						Le booster vous réveille et vous fait voyager en orient grâce à ses morceaux de dattes.
-					</p>
-					<p class="text-left">
-						<ins>Ingrédients</ins> : Crunchy Granola, Dattes, Pommes, Cerises, Graines de courges, Graines de lin doré et de l’énergie
-					</p>
-					<div class="text-center">
-						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="METN6VDZLLAUU">
-						<table class="table-paypal">
-						<tr><td><input type="hidden" name="on0" value="Taille">Taille</td></tr><tr><td><select name="os0">
-						    <option value="4 X 200g">4 X 200g €15,00 EUR</option>
-						    <option value="4 X 575g">4 X 575g €26,50 EUR</option>
-						</select> </td></tr>
-						</table>
-						<input type="hidden" name="currency_code" value="EUR">
-						<input class="input-paypal" type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
-						<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
-						</form>
-					</div>
-				</div>
-			</div>
 
 			<div class="row">
 				<div class="col-md-4">
@@ -170,6 +146,40 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<%= image_tag "BOOSTER.png", :size => "280x280" %>
+				</div>
+				<div class="col-md-8">
+					<div class="page-header">
+						<h3 class="text-left">Pack BOOSTER</h3>
+					</div>
+					<p class="text-left">
+						Le booster vous réveille et vous fait voyager en orient grâce à ses morceaux de dattes.
+					</p>
+					<p class="text-left">
+						<ins>Ingrédients</ins> : Crunchy Granola, Dattes, Pommes, Cerises, Graines de courges, Graines de lin doré et de l’énergie
+					</p>
+					<div class="text-center">
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="METN6VDZLLAUU">
+						<table class="table-paypal">
+						<tr><td><input type="hidden" name="on0" value="Taille">Taille</td></tr><tr><td><select name="os0">
+								<option value="4 X 200g">4 X 200g €15,00 EUR</option>
+								<option value="4 X 575g">4 X 575g €26,50 EUR</option>
+						</select> </td></tr>
+						</table>
+						<input type="hidden" name="currency_code" value="EUR">
+						<input class="input-paypal" type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
+						<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+						</form>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
 	</div>
 </section>
