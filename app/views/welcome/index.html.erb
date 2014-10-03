@@ -1,23 +1,24 @@
 <header class="header big-header" id="home">
 	<div class="container">
 		<div class="pre-header">
+			<p>Beta</p>
 			<a class="btn" href="mailto:dearmuesli@gmail.com?Subject=Hello" target="_top"> CONTACTEZ-NOUS </a>
+
 			<a href="<%= root_path %>"><%= image_tag "logo.png", :size => "210x210", :class => "logo" %></a>
 		</div>
 		<section>
 			<h1>Votre petit déjeuner réinventé</h1>
-			<h2>MIXEZ VOS MUESLIS PRÉFÉRÉS ET RECEVEZ-LES DIRECTEMENT CHEZ VOUS.</h2>
+			<h2>MIXEZ VOTRE MUESLI PRÉFÉRÉ ET RECEVEZ-LE DIRECTEMENT CHEZ VOUS.</h2>
 
-			<%= form_for :user do |f| %>
+
 			  <div class="form-group input-appesnd">
-			    <%= f.email_field :email, class: "form-control", placeholder: "Me prévenir quand le site est prêt", :required => true %>
-			  	<%= f.submit "ENVOYER", class: 'btn btn-danger' %>
+			   	<%= link_to 'Commander votre muesli dès maintenant', orders_path, class: 'btn btn-danger' %>
 
 			  	<% flash.each do |key, value| %>
 				  <div class="alert alert-<%= key %>">
 				  	<%= value %>
 				  </div>
-				<% end %>
+
 			  </div>
 			<% end %>
 		</section>
