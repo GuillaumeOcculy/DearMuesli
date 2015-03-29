@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   def seo
     set_meta_tags :description => "Mixez votre muesli préféré"
     set_meta_tags :site => "DearMuesli", :title => "Mixez votre muesli préféré"
-    set_meta_tags :keywords => %w[muesli paris sante sport]
+    set_meta_tags :keywords => %w[muesli recette crunchy petit-dejeuner snack]
     set_meta_tags :noindex => false
     set_meta_tags :nofollow => false
     # set_meta_tags :canonical => url_for(only_path: false)
