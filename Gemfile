@@ -13,6 +13,7 @@ gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass'
 gem 'meta-tags'
+gem 'quiet_assets'
 
 group :development, :test do
 	gem 'sqlite3'
